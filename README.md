@@ -23,3 +23,19 @@ Person {}
 
 </details>
 
+```### Let's Play with the constructor function Person
+
+```js
+const Person = function (firstName, birthYear) {};
+console.log(Person);
+```
+<details><summary>Terminal</summary>
+
+```
+$ node file.js
+[Function: Person]
+```
+
+</details>
+
+```

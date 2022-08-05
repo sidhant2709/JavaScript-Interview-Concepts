@@ -22,9 +22,7 @@
     Person {}
     Person {}
     ```
-2. Notes
-
-    <h4>Let's Play with the Constructor function Person</h4>
+2. Let's Play with the Constructor function Person
 
     ```js
     const Person = function (firstName, birthYear) {};

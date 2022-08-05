@@ -1,4 +1,4 @@
-1. ### What happens when we call a function with new operator keyword?
+### Question 1.  What happens when we call a function with new operator keyword?
 
     <h4>When we call a function with new operator keyword following thing happens:</h4>
     <ul>
@@ -23,6 +23,7 @@ Person {}
 
 </details>
 
+### Notes
 ### Let's Play with the constructor function Person
 
 ```js

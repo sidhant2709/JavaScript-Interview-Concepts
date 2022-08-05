@@ -11,8 +11,10 @@
 const Person = function (firstName, birthYear) {
     console.log(this);
 };
-console.log(new Person('Sidhant', 2000))
-
+console.log(new Person('Sidhant', 2000));
+```
+```
+$ node file.js
 Person {}
 Person {}
 ```

@@ -1,6 +1,6 @@
 1. ### What happens when we call a function with new operator keyword?
 
-    <h6>When we call a function with new operator keyword following thing happens:</h6>
+    <h4>When we call a function with new operator keyword following thing happens:</h4>
     <ul>
         <li>Step 1. New empty object({}) is created.</li>
         <li>Step 2. function is called, this points to new empty object created in step 1 i.e. this = {}.</li>

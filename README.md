@@ -1,40 +1,47 @@
-### Question 1.  What happens when we call a function with new operator keyword?
+# Object Oriented Programming
+## Constructor Function and Prototypes :
+<br>
+
+1. What happens when we call a function with new operator keyword?
 
     <h4>When we call a function with new operator keyword following thing happens:</h4>
     <ul>
-        <li>Step 1. New empty object({}) is created.</li>
-        <li>Step 2. function is called, this points to new empty object created in step 1 i.e. this = {}.</li>
-        <li>Step 3. This empty object({}) is linked to prototype</li>
-        <li>Step 4. function automatically returns the empty object</li>
+        <li>Step 1. New empty object ({ }) is created.</li>
+        <li>Step 2. function is called, this points to new empty object created in step 1 i.e. this = { }.</li>
+        <li>Step 3. This empty object ({ }) is linked to prototype.</li>
+        <li>Step 4. function automatically returns the empty object.</li>
     </ul>
-```js
-const Person = function (firstName, birthYear) {
-    console.log(this);
-};
-console.log(new Person('Sidhant', 2000));
-```
-<details><summary>Terminal</summary>
+    <br>
 
-```
-$ node file.js
-Person {}
-Person {}
-```
+    ```js
+    const Person = function (firstName, birthYear) {
+        console.log(this);
+    };
+    console.log(new Person('Sidhant', 2000));
 
-</details>
+    $ node file.js
+    Person {}
+    Person {}
+    ```
+2. Notes
 
-### Notes
-### Let's Play with the constructor function Person
+    <h4>Let's Play with the Constructor function Person</h4>
 
-```js
-const Person = function (firstName, birthYear) {};
-console.log(Person);
-```
-<details><summary>Terminal</summary>
+    ```js
+    const Person = function (firstName, birthYear) {};
 
-```
-$ node file.js
-[Function: Person]
-```
+    console.log(Person); //f (firstName, birthYear) {}
 
-</details>
+    $ node file.js
+    [Function: Person]
+    ```
+    ```js
+    console.log(Person.prototype); //{constructor: f}
+
+    $ node file.js
+    Person {}
+    ```
+
+
+
+

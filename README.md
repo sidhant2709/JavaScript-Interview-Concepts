@@ -1,6 +1,5 @@
 # Object Oriented Programming
 ## Constructor Function and Prototypes :
-<br>
 
 1. What happens when we call a function with new operator keyword?
 

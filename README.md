@@ -16,9 +16,11 @@ console.log(new Person('Sidhant', 2000));
 <details><summary>Terminal</summary>
 <p>
 ```
-$ node file.js
-Person {}
-Person {}
+```
+    $ node file.js
+    Person {}
+    Person {}
+```
 ```
 </p>
 </details>

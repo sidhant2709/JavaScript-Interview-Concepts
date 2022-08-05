@@ -14,9 +14,9 @@
 
     ```js
     const Person = function (firstName, birthYear) {
-        console.log(this);
+        console.log(this); // Person {}
     };
-    console.log(new Person('Sidhant', 2000));
+    console.log(new Person('Sidhant', 2000)); //Person {}
 
     $ node file.js
     Person {}

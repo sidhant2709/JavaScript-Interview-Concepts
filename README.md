@@ -23,7 +23,7 @@ Person {}
 
 </details>
 
-```### Let's Play with the constructor function Person
+### Let's Play with the constructor function Person
 
 ```js
 const Person = function (firstName, birthYear) {};
@@ -37,5 +37,3 @@ $ node file.js
 ```
 
 </details>
-
-```

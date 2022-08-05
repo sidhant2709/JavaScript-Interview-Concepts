@@ -25,7 +25,9 @@
 2. Let's Play with the Constructor function Person
 
     ```js
-    const Person = function (firstName, birthYear) {};
+    const Person = function (firstName, birthYear) {
+        // ......code
+    };
 
     console.log(Person); //f (firstName, birthYear) {}
 

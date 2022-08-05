@@ -1,6 +1,10 @@
 # Object Oriented Programming
 ## Constructor Function and Prototypes :
 
+```js
+Here the comments // are browser console output
+```
+
 1. What happens when we call a function with new operator keyword?
 
     <h4>When we call a function with new operator keyword following thing happens:</h4>

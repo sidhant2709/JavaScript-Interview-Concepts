@@ -22,7 +22,7 @@ Here the comments // are browser console output
     };
     console.log(new Person('Sidhant', 2000)); //Person {}
 
-    $ node file.js
+    $ node app.js
     Person {}
     Person {}
     ```
@@ -35,16 +35,55 @@ Here the comments // are browser console output
 
     console.log(Person); //f (firstName, birthYear) {}
 
-    $ node file.js
+    $ node app.js
     [Function: Person]
     ```
+3. Create objects using the constructor function
+
     ```js
-    console.log(Person.prototype); //{constructor: f}
+    const Person = function(firstName, birthYear){
+        //Instance Property
+        this.firstName = firstName;
+        this.birthYear = birthYear;
+    };
 
-    $ node file.js
-    Person {}
+    // sidhant is instance of Person
+    const sidhant = new Person('Sidhant', 1992);
+
+    console.log(sidhant); // Person {firstName: 'Sidhant', birthYear: 1992}
+
+    const jay = 'Jay';
+
+    console.log(sidhant instanceof Person); // true
+    console.log(jay instanceof Person); // false
+
+    $ node app.js
+    Person { firstName: 'Sidhant', birthYear: 1992 }
+    true
+    false
     ```
+4. Create methods for the Person object:
 
+    ***
+     We should not create Object methods like done in the below code because if we create many Person objects using This constructor function, then each of these objects would carry around this function here i.e. so if we have 1000 Person objects then we will have 1000 copies of this function which is terrible for the performance of the code so to solve this problem we will use prototypes and prototype inheritance.
+    ```js
+    const Person = function(firstName, birthYear){
+        this.firstName = firstName;
+        this.birthYear = birthYear;
+
+        // Never do this
+        this.calcAge = function()  {
+            console.log(2022 - this.birthYear);
+        }
+    };
+
+    const sidhant = new Person('Sidhant', 1992);
+    sidhant.calcAge();
+
+    $ node Prototype.js
+    30
+    ```
+    ***
 
 
 

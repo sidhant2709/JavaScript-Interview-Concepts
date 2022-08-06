@@ -149,7 +149,7 @@ Here the comments // are browser console output
                 [[Prototype]]: Object
     */
 
-    $ node Prototype.js
+    $ node app.js
     Person {}
     30
     Person { calcAge: [Function] }

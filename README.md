@@ -1,5 +1,5 @@
 # Object Oriented Programming
-## Constructor Function and Prototypes :
+## Constructor Function:
 
 ```js
 Here the comments // are browser console output
@@ -63,7 +63,6 @@ Here the comments // are browser console output
     false
     ```
 4. Create methods for the Person object:
-
     ***
      We should not create Object methods like done in the below code because if we create many Person objects using This constructor function, then each of these objects would carry around this function here i.e. so if we have 1000 Person objects then we will have 1000 copies of this function which is terrible for the performance of the code so to solve this problem we will use prototypes and prototype inheritance.
     ```js
@@ -84,6 +83,81 @@ Here the comments // are browser console output
     30
     ```
     ***
+
+## Prototype:
+<hr>
+
+1. What is Prototype explain with examples and create a method to the prototype property to the above constructor function?
+    ***
+     Each and every functions in the JavaScript automatically has a property called prototype that includes constructor function, now every objects that is created by certain constructor function will get access to all the methods and properties that we define on the constructor prototype property
+    ```js
+    const Person = function(firstName, birthYear){
+        this.firstName = firstName;
+        this.birthYear = birthYear;
+    };
+    const sidhant = new Person('Sidhant', 1992);
+    console.log(Person.prototype);
+
+    /*
+    browser console
+        {constructor: ƒ}
+            constructor: ƒ (firstName, birthYear)
+            [[Prototype]]: Object
+    */
+
+    $ node Prototype.js
+    Person {}
+    ```
+    ```js
+    const Person = function(firstName, birthYear){
+        this.firstName = firstName;
+        this.birthYear = birthYear;
+    };
+    const sidhant = new Person('Sidhant', 1992);
+
+    console.log(Person.prototype);
+
+    // Now add a method to this prototype property
+    Person.prototype.calcAge = function(){
+        console.log(2022 - this.birthYear);
+    }
+
+    sidhant.calcAge();
+    console.log(Person.prototype);
+    console.log(sidhant);
+
+    /*
+    browser console
+        {constructor: ƒ}
+            calcAge: ƒ ()
+            constructor: ƒ (firstName, birthYear)
+            [[Prototype]]: Object
+
+        30
+
+        {calcAge: ƒ, constructor: ƒ}
+            calcAge: ƒ ()
+            constructor: ƒ (firstName, birthYear)
+            [[Prototype]]: Object
+
+        Person {firstName: 'Sidhant', birthYear: 1992}
+            birthYear: 1992
+            firstName: "Sidhant"
+            [[Prototype]]: Object
+                calcAge: ƒ ()
+                constructor: ƒ (firstName, birthYear)
+                [[Prototype]]: Object
+    */
+
+    $ node Prototype.js
+    Person {}
+    30
+    Person { calcAge: [Function] }
+    Person { firstName: 'Sidhant', birthYear: 1992 }
+    ```
+    ***
+
+
 
 
 

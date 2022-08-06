@@ -79,7 +79,7 @@ Here the comments // are browser console output
     const sidhant = new Person('Sidhant', 1992);
     sidhant.calcAge();
 
-    $ node Prototype.js
+    $ node app.js
     30
     ```
     ***
@@ -105,7 +105,7 @@ Here the comments // are browser console output
             [[Prototype]]: Object
     */
 
-    $ node Prototype.js
+    $ node app.js
     Person {}
     ```
     ```js

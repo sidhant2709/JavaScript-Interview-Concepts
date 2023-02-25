@@ -209,7 +209,8 @@ Here the comments // are browser console output
         }
     }
 
-    //The methods also can created by the below prototype code, it  will work as same as the above greet method in class PersonCl
+    // The methods also can created by the below prototype code, 
+    // it  will work as same as the above greet method in class PersonCl
 
     // PersonCl.prototype.greet = function () {
     //   console.log(`Hey ${this.fullName} welcome to OOPs concept`);

@@ -241,8 +241,8 @@ Here the comments // are browser console output
     ```
 2. In ES6 Classes implement getters and setters in the PersonCl class.
 
-    ![Screenshot](Getters_and_Setters.png)
+    <img src="./Getters_and_Setters.png" />
 
     ***Output***
 
-    ![Screenshot](Getters_and_Setters_Output.png)
+    <img src="./Getters_and_Setters_Output.png" />
